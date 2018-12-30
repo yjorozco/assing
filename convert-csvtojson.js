@@ -7,7 +7,7 @@ csv()
 .fromFile(csvFilePath)
 .then((jsonObj)=>{
       
-    fs.writeFileSync(path.join(__dirname, 'json', 'customer.json'), JSON.stringify(jsonObj))  
+    fs.writeFileSync(path.join(__dirname, 'json', 'customer.json'), JSON.stringify(jsonObj, null, 2));
 
 })
  
